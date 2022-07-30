@@ -5,7 +5,7 @@ import styles from '@/styles/Home.module.css'
 import NavigationComponent from '@/components/layout/navigationComponent'
 
 type LayoutPropsType ={
-    children?:JSX.Element,
+    children?:JSX.Element | undefined,
 } 
 
 const Layout: FC<LayoutPropsType> = ({children}) => {
