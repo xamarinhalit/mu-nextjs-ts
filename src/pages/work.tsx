@@ -5,7 +5,7 @@ import * as React from 'react';
 interface IWorkPageProps {
 }
 
-const WorkPage: React.FunctionComponent<IWorkPageProps> = (props) => {
+const WorkPage: React.FunctionComponent<IWorkPageProps> = () => {
   return(
     <Layout>
         <WorkListComponent></WorkListComponent>

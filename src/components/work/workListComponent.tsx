@@ -39,7 +39,7 @@ const WorkListDiv = styled("div")({
   height: 400, width: '100vw'
 })
 
-export default function WorkListComponent(): React.ReactNode {
+export default function WorkListComponent(): React.ReactElement {
   return (<>
     <WorkListDiv>
       <DataGrid
