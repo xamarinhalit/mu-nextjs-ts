@@ -19,7 +19,10 @@
       "@/components/*": ["components/*"],
       "@/styles/*": ["assets/styles/*"],
       "@/themes/*": ["assets/themes/*"],
-      "@/utility/*": ["utility/*"]
+      "@/utils/*": ["utils/*"],
+      "@/contracts/*": ["contracts/*"],
+      "@/models/*": ["models/*"],
+      "@/services/*": ["services/*"]
     },
 
   },

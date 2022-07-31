@@ -1,11 +1,12 @@
 import * as React from 'react';
 import { DataGrid, GridColDef, GridValueGetterParams } from '@mui/x-data-grid';
+import { alpha, styled } from '@mui/material/styles';
 
 const columns: GridColDef[] = [
   { field: 'id', headerName: 'ID', width: 100 },
   { field: 'firstName', headerName: 'First name', width: 230 },
   { field: 'lastName', headerName: 'Last name', width: 230 },
-  { 
+  {
     field: 'age',
     headerName: 'Age',
     type: 'number',
@@ -34,9 +35,13 @@ const rows = [
   { id: 9, lastName: 'Roxie', firstName: 'Harvey', age: 65 },
 ];
 
-export default function WorkListComponent() {
-  return (
-    <div style={{ height: 400, width: '100vw' }}>
+const WorkListDiv = styled("div")({
+  height: 400, width: '100vw'
+})
+
+export default function WorkListComponent(): React.ReactNode {
+  return (<>
+    <WorkListDiv>
       <DataGrid
         rows={rows}
         columns={columns}
@@ -44,6 +49,7 @@ export default function WorkListComponent() {
         rowsPerPageOptions={[5]}
         checkboxSelection
       />
-    </div>
+    </WorkListDiv>
+  </>
   );
 }

@@ -8,7 +8,7 @@ import '@fontsource/roboto/400.css';
 import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
 
-import createEmotionCache from '@/utility/createEmotionCache';
+import createEmotionCache from 'utils/createEmotionCache';
 import lightThemeOptions from '@/themes/lightThemeOptions';
 import darkThemeOptions from '@/themes/darkThemeOptions';
 import '@/styles/globals.css';
