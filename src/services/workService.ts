@@ -1,6 +1,6 @@
 import { WorkDbNames, WorkItem, WorkType } from "@/contracts/IWork";
 import IWorkService from "@/contracts/IWorkService";
-import { Work } from "@/models/Work";
+import { Work } from "consumers/Work";
 
 class WorkInstanceService implements IWorkService<WorkDbNames, WorkItem> {
   public static get instance() {
