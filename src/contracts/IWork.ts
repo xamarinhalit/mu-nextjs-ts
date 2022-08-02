@@ -1,12 +1,11 @@
 import { DatabaseType } from "./IDb";
 
-export type WorkItem={
-    id:number
-    lastName:string
-    firstName:string
-    age:number
-}
-
+export type WorkItem = {
+    id: number
+    lastName: string
+    firstName: string | null
+    age: number | null
+};
 export type WorkDbNames ={
     work:string,
 }
